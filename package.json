@@ -20,11 +20,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build_heroku": "cd front && npm install && npm run build && cd ..",
     "deploy": "cp -a front/build/. public/",
-    "heroku-postbuild": "yarn build_heroku && yarn deploy && echo 'Client built!'"
+    "heroku-postbuild": "yarn build && yarn deploy && echo 'Client built!'"
   },
   "eslintConfig": {
     "extends": "react-app"

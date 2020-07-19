@@ -27,7 +27,8 @@ end
 def file_import(file_name: nil, title: nil)
   raise ArgumentError if file_name.nil? || title.nil?
 
-  path = File.join Rails.root, "db/csv/#{file_name}"
+  # path = File.join Rails.root, "db/csv/#{file_name}"
+  path = File.join Rails.root, "#{file_name}"
   puts "-- File Path: #{path}"
 
   import_data = eval("#{title}_csv_import(path: '#{path}')")

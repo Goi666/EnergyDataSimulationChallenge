@@ -18,7 +18,7 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "cd front && npm run install && npm i -D react-scripts && npm i react react-dom && react-scripts build && cd ..",
+    "build": "cd front && npm install && npm i -D react-scripts && npm i react react-dom && react-scripts build && cd ..",
     "deploy": "cp -a front/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy && echo 'Client built!'"
   },

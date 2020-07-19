@@ -15,10 +15,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build_bk": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build_heroku": "cd front && yarn install && yarn run build && cd ..",
+    "build_heroku": "cd front && yarn install && yarn build && cd ..",
     "deploy": "cp -a front/build/. public/",
     "heroku-postbuild": "yarn run build_heroku && yarn run deploy && echo 'Client built!'"
   },

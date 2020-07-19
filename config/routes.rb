@@ -7,6 +7,6 @@ Rails.application.routes.draw do
       resources :energy, only: %i[index]
     end
 
-    get '*path', to: 'homes#index'
+#    get '*path', to: 'homes#index'
   end
 end

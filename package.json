@@ -21,7 +21,7 @@
     "heroku-postbuild": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "engines": {
-    "node": "12.x",
+    "node": "12.x"
   },
   "eslintConfig": {
     "extends": "react-app"

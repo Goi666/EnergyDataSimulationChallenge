@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
+  "engines": {
+    "node": "12.x",
+    "npm": "6.14.5"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -21,9 +25,6 @@
     "build_heroku": "cd front && npm install && npm run build && cd ..",
     "deploy": "cp -a front/build/. public/",
     "heroku-postbuild": "yarn build_heroku && yarn deploy && echo 'Client built!'"
-  },
-  "engines": {
-    "node": "12.x"
   },
   "eslintConfig": {
     "extends": "react-app"

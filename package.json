@@ -1,6 +1,6 @@
 {
   "name": "front",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "main": "index.js",
   "dependencies": {
@@ -18,7 +18,7 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "cd front && npm install && npm i -D react-scripts && npm i react react-dom && react-scripts build && cd ..",
+    "build": "cd front && npm install && npm run build && cd ..",
     "deploy": "cp -a front/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy && echo 'Client built!'"
   },

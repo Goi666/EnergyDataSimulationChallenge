@@ -40,6 +40,7 @@ module Myapp
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins "*"
+        # origins 'http://localhost:8000', 'https://enechange-goi.herokuapp.com/'
         resource "*",
           headers: :any,
           methods: [:get, :post, :options, :head]
